@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.pf.dao.boarddao">
+	<select id="boardList" resultType="org.pf.dto.boarddto">
+		select * from board
+	</select>
+	
+	<insert id="boardwrite">
+		insert into board(title,content,writer,id)
+		values(#{title},#{content},#{writer},#{id})
+	</insert>
+	
+	<select id="boarddetail" resultType="org.pf.dto.boarddto">
+		select * from board where bno = #{bno}
+	</select>
+	
+	<update id="boardmodify">
+		update board set title=#{title} , content=#{content} where bno=#{bno}
+	</update>
+</mapper>

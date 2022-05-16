@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xml은 sql문 사용 -->
+<!-- DTD 선언 -->
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.pf.dao.joindao"> <!-- joindao.java랑 연결. 어떤객체를 쓸거냐 정하는거 -->
+	<insert id="join">
+		insert into member(id,pw,username,gender) <!-- column명 -->
+		values (#{id},#{pw},#{username},#{gender}) <!-- dto변수명 -->
+	</insert>
+	
+	<select id="login" resultType="org.pf.dto.joindto">
+		select * from member where id=#{id} and pw=#{pw}
+	</select>
+</mapper>
