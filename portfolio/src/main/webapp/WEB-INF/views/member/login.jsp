@@ -24,7 +24,7 @@
 			<input type="submit" id="login" value="로그인">
 			<input type="button" id="join" value="회원가입">
 		</form>
-	</div><!-- Inpage -->
+	</div><!-- pageIn -->
 </div>
 </body>
 </html>
