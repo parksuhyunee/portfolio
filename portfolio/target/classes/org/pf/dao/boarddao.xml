@@ -20,4 +20,8 @@
 	<update id="boardmodify">
 		update board set title=#{title} , content=#{content} where bno=#{bno}
 	</update>
+	
+	<delete id="boardremove">
+		delete from board where bno=#{bno};
+	</delete>
 </mapper>

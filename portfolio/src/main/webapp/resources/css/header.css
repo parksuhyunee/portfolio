@@ -22,7 +22,7 @@ a{
 }
 
 /* 헤더 */
-.wrap .header .headerIn{
+.headerIn{
     width: 1200px;
     height: 100px;
     margin: 0 auto;
@@ -31,12 +31,13 @@ a{
     align-items: center;
     position: relative;
 }
-
+.logo{
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	margin-left: -40px;
+}
 .logo a{
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    /* background-color: cornflowerblue; */
     display: block;
     width: 80px;
     height: 80px;
@@ -47,12 +48,13 @@ a{
     background-size : 80px 80px;
 }
 .member{
-    position: absolute;
-    right: 20px;
+	position: absolute;
+	right: 0;
+	top: 70px;
 }
 
-.member a{
-	margin-left : 20px;
+.jogin a{
+	color: #444444;
 }
 
 .member .btn_sc{
@@ -82,15 +84,18 @@ a{
 	justify-content: space-around;
 }
 
+.member a{
+	margin-left: 20px;
+}
+
 .gnb{
-    /* z-index: 100; */
     position: relative;
     background-color: rgb(108, 101, 96);
     height: 52px;
 }
 
 .gnb-in{
-    width: 980px;
+    width: 1190px;
     margin: 50px auto;
 }
 
@@ -105,51 +110,40 @@ a{
 
 .gnb-in>ul>li>a{
     display: block;
-    line-height: 50px;
+    width: 170px;
+    height: 52px;
+	line-height: 52px;
     color: #fff;
     font-size: 17px;
-    padding-right: 90px;
+    text-align: center;
 }
 
 .gnb .sub{
     position: absolute;
-    top: 50px;
-    left: -10px;
-    /* background-color: rgb(122, 171, 143); */
+    top: 52px;
+    left: 0;
+    background-color: rgba(158, 145, 145, 0.9);
     width: 100%;
-    height: 250px;
+    height: 300px;
     z-index: 1;
     display: none;
 }
-
+.sub ul li{
+	text-align: center;
+}
 .gnb .sub a{
-    font-size: 11px;
+    font-size: 15px;
     color: #fff;
     line-height: 25px;
+    text-align: center;
 }
 
-.gnbBg{
-    position: absolute;
-    top: 50px;
-    left: 0;
-    background-color: rgb(99, 84, 73);
-    width: 100%;
-    height: 250px;
-    display: none;
-}
-
-.gnb-in>ul>li:last-child{
-    width: 150px;
-}
-.gnb-in>ul>li:last-child>.sub{
-    margin-left: 20px;
-}
-
-.gnb-in>ul>li:last-child>a{
+/* .gnb-in>ul>li:last-child>a{
     background-color: rgb(77, 62, 51);
     display: block;
     line-height: 50px;
     text-align: center;
     font-size: 18px;
-    padding-right: 0;
-}
+    padding: 0;
+    width: 140px;
+} */

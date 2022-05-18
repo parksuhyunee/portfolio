@@ -11,6 +11,7 @@
 </head>
 <body>
 <div class="page">
+	<jsp:include page="../header.jsp"/>
 	<div class="pageIn">
 		<form action="/member/login" method="post"> <!-- member/login = 내가 설정한 이름(주소로 쓰임) -->
 			<table id="table">
@@ -25,6 +26,7 @@
 			<input type="button" id="join" value="회원가입">
 		</form>
 	</div><!-- pageIn -->
+	<jsp:include page="../footer.jsp"/>
 </div>
 </body>
 </html>

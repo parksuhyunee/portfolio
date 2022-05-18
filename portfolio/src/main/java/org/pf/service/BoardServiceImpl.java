@@ -22,5 +22,11 @@ public class BoardServiceImpl implements BoardService{
 	public boarddto boarddetail(int bno) {
 		return bdao.boarddetail(bno);
 	}
+	public void boardmodify(boarddto bdto) {
+		bdao.boardmodify(bdto);
+	}
+	public void boardremove(int bno) {
+		bdao.boardremove(bno);
+	}
 
 }

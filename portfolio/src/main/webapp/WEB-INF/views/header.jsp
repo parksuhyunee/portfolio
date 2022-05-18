@@ -6,28 +6,37 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="./resources/css/header.css">
+<!-- <script type="text/javascript" src="./slick-1.8.1/slick-1.8.1/slick/slick.js"></script> -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../resources/js/header.js"></script>
+
+<link rel="stylesheet" href="../resources/css/header.css">
 </head>
 <body>
 	<div class="header">
 		<div class="headerIn">
 			<h1 class="logo">
-				<a href="#">전국 국립박물관</a>
+				<a href="/main">전국 국립박물관</a>
 			</h1>
 			<div class="member">
-				<c:if test="${login == null}">
-					<a href="/member/login">로그인</a>
-					<a href="/member/join">회원가입</a>
-				</c:if>
+				<div class="jogin">
+					<c:if test="${login == null}">
+						<a href="/member/login">로그인</a>
+						<a href="/member/join">회원가입</a>
+						<a href="/board/list">게시판</a>
+					</c:if>
+				</div>
 
-				<c:if test="${login != null}">
-					<ul>
-						<li><a href="/member/logout">로그아웃</a></li>
-						<li><a href="/board/list">게시판</a></li>
-						<li><a href="#" class="btn_sc">검색하기</a></li>
-						<li><a href="#" class="btn_cart">장바구니</a></li>
-					</ul>
-				</c:if>
+				<div class="jogin">
+					<c:if test="${login != null}">
+						<ul>
+							<li><a href="/member/logout">로그아웃</a></li>
+							<li><a href="/board/list">게시판</a></li>
+							<li><a href="#" class="btn_sc">검색하기</a></li>
+							<li><a href="#" class="btn_cart">장바구니</a></li>
+						</ul>
+					</c:if>
+				</div>
 			</div>
 			<!-- .member-->
 		</div>
@@ -36,7 +45,8 @@
 		<div class="gnb">
 			<div class="gnb-in">
 				<ul>
-					<li><a href="#">경기도</a>
+					<li>
+						<a href="#">경기도</a>
 						<div class="sub">
 							<ul>
 								<li><a href="#">국립한글박물관</a></li>
@@ -53,7 +63,7 @@
 								<li><a href="#"></a></li>
 							</ul>
 						</div>
-						<!--경기도--></li>
+					</li><!--경기도-->
 					<li><a href="#">경상도</a>
 						<div class="sub">
 							<ul>
@@ -64,7 +74,7 @@
 								<li><a href="#">국립등대박물관</a></li>
 							</ul>
 						</div>
-						<!--경상도--></li>
+					</li><!--경상도-->
 					<li><a href="#">전라도</a>
 						<div class="sub">
 							<ul>
@@ -77,7 +87,7 @@
 								<li><a href="#">전사박물관</a></li>
 							</ul>
 						</div>
-						<!--전라도--></li>
+					</li><!--전라도-->
 					<li><a href="#">충청도</a>
 						<div class="sub">
 							<ul>
@@ -89,21 +99,21 @@
 								<li><a href="#">보령문화의전당</a></li>
 							</ul>
 						</div>
-						<!--충청도--></li>
+					</li><!--충청도-->
 					<li><a href="#">강원도</a>
 						<div class="sub">
 							<ul>
 								<li><a href="#">국립춘천박물관</a></li>
 							</ul>
 						</div>
-						<!--강원도--></li>
+					</li><!--강원도-->
 					<li><a href="#">제주도</a>
 						<div class="sub">
 							<ul>
 								<li><a href="#">국립제주박물관</a></li>
 							</ul>
 						</div>
-						<!--제주도--></li>
+					</li><!--제주도-->
 					<li><a href="#">예약 및 예매</a>
 						<div class="sub">
 							<ul>
@@ -115,10 +125,10 @@
 								<li><a href="#">제주도 예매</a></li>
 							</ul>
 						</div>
-						<!--예약 및 예매--></li>
+					</li><!--예약 및 예매-->
 				</ul>
 			</div>
-			<div class="gnbBg"></div>
+			
 		</div>
 		<!-- .gnb-->
 	</div>

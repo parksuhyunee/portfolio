@@ -19,7 +19,6 @@ public class boardController {
 		return "/board/list";
 	}
 	
-	
 	@RequestMapping(value="/board/write", method=RequestMethod.GET)
 	public void getwrite() {
 		
@@ -39,11 +38,22 @@ public class boardController {
 	
 	
 	@RequestMapping(value="/board/modify", method=RequestMethod.GET)
-	public void getmodify() {
-		
+	public String getmodify(Model model, int bno) {
+		model.addAttribute("bmodify", bservice.boarddetail(bno));
+		return "/board/modify";
 	}
-
-
+	
+	@RequestMapping(value="/board/modify", method=RequestMethod.POST)
+	public String postmodify(boarddto bdto) {
+		bservice.boardmodify(bdto);
+		return "redirect:/board/detail?bno=" + bdto.getBno();
+	}
+	
+	@RequestMapping(value="/board/remove", method=RequestMethod.GET)
+	public String postremove(int bno) {
+		bservice.boardremove(bno);
+		return "redirect:/board/list";
+	}
 	
 	
 	

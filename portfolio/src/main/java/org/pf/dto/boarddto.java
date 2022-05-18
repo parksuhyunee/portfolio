@@ -8,6 +8,7 @@ public class boarddto {
 	private String regdate;
 	private int count;
 	private String id;
+	
 	public int getBno() {
 		return bno;
 	}

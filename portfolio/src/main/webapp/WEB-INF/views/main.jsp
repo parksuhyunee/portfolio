@@ -6,135 +6,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../resources/css/main.css">
 </head>
 <body>
-	<div class="wrap">
-        <div class="header">
-            <div class="headerIn">
-                <h1 class="logo">
-                    <a href="#">전국 국립박물관</a>
-                </h1>
-                <div class="member">
-                    <c:if test="${login == null}">
-						<a href	="/member/login">로그인</a>
-						<a href="/member/join">회원가입</a>
-					</c:if>
-					
-					<c:if test="${login != null}">
-						<ul>
-							<li><a href	="/member/logout">로그아웃</a></li>
-							<li><a href="/board/list">게시판</a></li>
-							<li><a href="#" class="btn_sc">검색하기</a></li>
-	                        <li><a href="#" class="btn_cart">장바구니</a></li>
-                        </ul>
-					</c:if>
-				</div><!-- .member-->
-            </div><!-- .headerIn-->
-
-            <div class="gnb">
-                <div class="gnb-in">
-                    <ul>
-                        <li>
-                            <a href="#">경기도</a>
-                            <div class="sub">
-                                <ul>
-                                    <li><a href="#">국립한글박물관</a></li>
-                                    <li><a href="#">국립고궁박물관</a></li>
-                                    <li><a href="#">국립어린이과학관</a></li>
-                                    <li><a href="#">국립항공박물관</a></li>
-                                    <li><a href="#">국립민속박물관 어린이박물관</a></li>
-                                    <li><a href="#">국립민속박물관</a></li>
-                                    <li><a href="#">국립민속박물관파주</a></li>
-                                    <li><a href="#">국립조세박물관</a></li>
-                                    <li><a href="#">국립수목원산림박물관</a></li>
-                                    <li><a href="#">전쟁기념관</a></li>
-                                    <li><a href="#">서해수호관</a></li>
-                                    <li><a href="#"></a></li>
-                                </ul>
-                            </div><!--경기도-->
-                        </li>
-                        <li>
-                            <a href="#">경상도</a>
-                            <div class="sub">
-                                <ul>
-                                    <li><a href="#">국립경주박물관</a></li>
-                                    <li><a href="#">국립대구박물관</a></li>
-                                    <li><a href="#">국립김해박물관</a></li>
-                                    <li><a href="#">국립진주박물관</a></li>
-                                    <li><a href="#">국립등대박물관</a></li>
-                                </ul>
-                            </div><!--경상도-->
-                        </li>
-                        <li>
-                            <a href="#">전라도</a>
-                            <div class="sub">
-                                <ul>
-                                    <li><a href="#">국립광주박물관</a></li>
-                                    <li><a href="#">국립전주박물관</a></li>
-                                    <li><a href="#">국립나주박물관</a></li>
-                                    <li><a href="#">국립익산박물관</a></li>
-                                    <li><a href="#">국립해양문화재연구소</a></li>
-                                    <li><a href="#">국립소록도병원 한센병박물관</a></li>
-                                    <li><a href="#">전사박물관</a></li>
-                                </ul>
-                            </div><!--전라도-->
-                        </li>
-                        <li>
-                            <a href="#">충청도</a>
-                            <div class="sub">
-                                <ul>
-                                    <li><a href="#">국립중앙과학관</a></li>
-                                    <li><a href="#">국립공주박물관</a></li>
-                                    <li><a href="#">국립부여박물관</a></li>
-                                    <li><a href="#">국립청주박물관</a></li>
-                                    <li><a href="#">국립해양문화재연구소</a></li>
-                                    <li><a href="#">보령문화의전당</a></li>
-                                </ul>
-                            </div><!--충청도-->
-                        </li>
-                        <li>
-                            <a href="#">강원도</a>
-                            <div class="sub">
-                                <ul>
-                                    <li><a href="#">국립춘천박물관</a></li>
-                                </ul>
-                            </div><!--강원도-->
-                        </li>
-                        <li>
-                            <a href="#">제주도</a>
-                            <div class="sub">
-                                <ul>
-                                    <li><a href="#">국립제주박물관</a></li>
-                                </ul>
-                            </div><!--제주도-->
-                        </li>
-                        <li>
-                            <a href="#">예약 및 예매</a>
-                            <div class="sub">
-                                <ul>
-                                    <li><a href="#">경기도 예매</a></li>
-                                    <li><a href="#">경상도 예매</a></li>
-                                    <li><a href="#">전라도 예매</a></li>
-                                    <li><a href="#">충청도 예매</a></li>
-                                    <li><a href="#">강원도 예매</a></li>
-                                    <li><a href="#">제주도 예매</a></li>
-                                </ul>
-                            </div><!--예약 및 예매-->
-                        </li>
-                    </ul>
-                </div>
-                <div class="gnbBg"></div>
-            </div><!-- .gnb-->
-        </div><!-- .header-->
+	<jsp:include page="header.jsp"/>
 
         <div class="container">
             <div class="main1">
                 <div class="mainimg">
-                    <a href="#">
+                    <a href="#" class="photo">
                         <img src="../resources/img/main.jpg" alt="">
                     </a>
                 </div>
@@ -145,8 +29,8 @@
                     <div class="top">
                         <ul>
                             <li class="hot">
-                                <a href="#">
-                                    <P class="photo"><img src="../resources/img/museum.PNG" alt=""></P><!--이미지 넣기-->
+                            	<a href="#">
+                                	<p class="photo"><img src="../resources/img/museum.PNG" alt=""></p><!--이미지 넣기-->
                                     <p class="tit">국립중앙박물관</p>
                                     <p class="memo">시대와 주제별로 제시된 6개의 상설전시관, 다양한 내용을 선보이는 특별전시관, 관람의 이해를 돕는 전시해설 프로그램, 오감으로 즐기고 배우는 어린이박물관, 다채로운 교육 프로그램, 첨단기술을 활용한 실감콘텐츠 등을 마음껏 누리고 즐기실 수 있습니다.</p>
                                     <p class="tag">
@@ -156,7 +40,7 @@
                             </li>
                             <li class="recommend1">
                                 <a href="#">
-                                    <P class="photo"><img src="../resources/img/recommend1.PNG" alt=""></P><!--이미지 넣기-->
+                                    <p class="photo"><img src="../resources/img/recommend1.PNG" alt=""></p><!--이미지 넣기-->
                                     <p class="tit">국립중앙박물관</p>
                                     <p class="memo">2022년 임인년 맞이 호랑이 그림</p>
                                     <p class="tag">
@@ -166,7 +50,7 @@
                             </li>
                             <li class="recommend2">
                                 <a href="#">
-                                    <P class="photo"><img src="../resources/img/recommend2.PNG" alt=""></P><!--이미지 넣기-->
+                                    <p class="photo"><img src="../resources/img/recommend2.PNG" alt=""></p><!--이미지 넣기-->
                                     <p class="tit">국립진주박물관</p>
                                     <p class="memo">한국 채색화의 흐름</p>
                                     <p class="tag">
@@ -231,29 +115,7 @@
             </div><!--main3-->
         </div><!--container-->
 
-        <div class="footer">
-            <p class="line"></p>
-            <div class="footerIn">
-                
-                <div class="fMenu">
-                    <ul>
-                        <li><a href="#">사이트 소개</a></li>
-                        <li><a href="#">사이트 이용약관</a></li>
-                        <li class="point"><a href="#">개인정보 처리방침</a></li>
-                        <li><a href="#">시스템 오류신고</a></li>
-                    </ul>
-                </div><!-- .fMenu -->
-                <p class="fInfo">
-                    <span class="mar">전국 국립박물관</span>
-                    <span class="mar">대표이사: 홍길동</span>
-                    <span class="mar">서울시 중구 청계천로 100</span><br>
-                    사업자 등록번호 : 000-11-22222
-                    <a href="https://teht.hometax.go.kr/websquare/websquare.html?w2xPath=/ui/ab/a/a/UTEABAAA13.xml" target="_blank">[사업자 정보확인]</a><br>
-                    대표전화 : 123-456-7890 / FAX : 111-222-4567<br>
-                    ⓒCopyrightGGCF.ALL RIGHTSRESERVED.
-                </p>
-            </div><!-- .footerIn -->
-        </div><!-- .footer -->
+        <jsp:include page="footer.jsp"/>
 
     </div><!--wrap-->
 
