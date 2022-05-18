@@ -20,6 +20,7 @@
 #table{
 	width : 500px;
 	height : 400px;
+	margin-top: 30px;
 }
 
 #table td{
@@ -28,6 +29,7 @@
 
 #table input, textarea{
 	border: 0;
+	outline: none;
 }
 
 .page2{
@@ -38,13 +40,14 @@
 	align-items: center;
 }
 
+
 .modifybtn{
 	width : 100px;
 	height : 40px;
 	border: 1px solid #333;
 	text-align: center;
 	line-height: 38px;
-	margin: 10px 10px 10px 10px;
+	margin: 50px 10px 10px 10px;
 	font-size : 15px;
 	color: #fff;
 	background-color: rgb(108, 101, 96);
