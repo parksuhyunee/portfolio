@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="../resources/css/detail.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../resources/js/reply.js"></script>
 </head>
 <body>
 <div class="page">
@@ -32,11 +34,11 @@
 			</tr>
 		</table>
 	</div>
+	
 	<div class="page2">
 		<a href="/board/list" class="detaillist">목록</a>
 		<a href="/board/modify?bno=${bdetail.bno }" class="detailmodify">수정</a>
 		<a href="/board/remove?bno=${bdetail.bno }" class="detailremove">삭제</a>
-		<a href="" class="detailreply">댓글</a>
 	</div>
 	<jsp:include page="../footer.jsp"/>
 </div>
