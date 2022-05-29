@@ -30,7 +30,7 @@
                         <ul>
                             <li class="hot">
                             	<a href="#">
-                                	<p class="photo"><img src="../resources/img/museum.PNG" alt=""></p><!--이미지 넣기-->
+                                	<p class="photo"><img src="../resources/img/museum.PNG" alt=""></p>
                                     <p class="tit">국립중앙박물관</p>
                                     <p class="memo">시대와 주제별로 제시된 6개의 상설전시관, 다양한 내용을 선보이는 특별전시관, 관람의 이해를 돕는 전시해설 프로그램, 오감으로 즐기고 배우는 어린이박물관, 다채로운 교육 프로그램, 첨단기술을 활용한 실감콘텐츠 등을 마음껏 누리고 즐기실 수 있습니다.</p>
                                     <p class="tag">
@@ -40,7 +40,7 @@
                             </li>
                             <li class="recommend1">
                                 <a href="#">
-                                    <p class="photo"><img src="../resources/img/recommend1.PNG" alt=""></p><!--이미지 넣기-->
+                                    <p class="photo"><img src="../resources/img/recommend1.PNG" alt=""></p>
                                     <p class="tit">국립중앙박물관</p>
                                     <p class="memo">2022년 임인년 맞이 호랑이 그림</p>
                                     <p class="tag">
@@ -50,7 +50,7 @@
                             </li>
                             <li class="recommend2">
                                 <a href="#">
-                                    <p class="photo"><img src="../resources/img/recommend2.PNG" alt=""></p><!--이미지 넣기-->
+                                    <p class="photo"><img src="../resources/img/recommend2.PNG" alt=""></p>
                                     <p class="tit">국립진주박물관</p>
                                     <p class="memo">한국 채색화의 흐름</p>
                                     <p class="tag">
